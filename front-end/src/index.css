@@ -1,0 +1,377 @@
+@import "tailwindcss";
+
+
+/* Custom Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-amber-600 to-rose-600 bg-clip-text text-transparent;
+  }
+  
+  .service-card {
+    @apply transition-all duration-300 hover:-translate-y-2;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-amber-50;
+}
+
+::-webkit-thumb {
+  @apply bg-gradient-to-b from-amber-500 to-rose-500 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply from-amber-600 to-rose-600;
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pulse-soft {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Add these styles to your existing CSS file */
+
+/* Gallery specific styles */
+.gallery-item {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-item:hover {
+  transform: translateY(-8px);
+}
+
+/* Lightbox animations */
+@keyframes lightboxFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.lightbox-enter {
+  animation: lightboxFadeIn 0.3s ease-out;
+}
+
+/* Before/After comparison slider */
+.comparison-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.comparison-slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: white;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+/* Instagram feed hover effect */
+.insta-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 0, 150, 0.3),
+    rgba(0, 204, 255, 0.3)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.insta-card:hover::before {
+  opacity: 1;
+}
+
+/* Gradient text animation */
+.gradient-text {
+  background: linear-gradient(45deg, #f59e0b, #e11d48, #8b5cf6, #3b82f6);
+  background-size: 300% 300%;
+  animation: gradientShift 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Floating animation for badges */
+@keyframes floatBadge {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.floating-badge {
+  animation: floatBadge 3s ease-in-out infinite;
+}
+
+/* Shine effect on hover */
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    transparent 20%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 80%
+  );
+  transform: rotate(30deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) rotate(30deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(30deg);
+  }
+}
+
+/* Add these styles to your existing CSS for the Contact Page */
+
+/* Gradient text animation */
+.gradient-text {
+  background: linear-gradient(45deg, #f59e0b, #e11d48, #8b5cf6);
+  background-size: 300% 300%;
+  animation: gradientShift 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Form input focus effects */
+.form-input:focus {
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+}
+
+/* Tab transitions */
+.tab-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Card hover effects */
+.contact-card {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.contact-card:hover::before {
+  left: 100%;
+}
+
+/* Success message animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* FAQ accordion animation */
+details[open] summary ~ * {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Map marker pulse animation */
+@keyframes pulse-large {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: pulse-large 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Social icon hover effect */
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover gradient effect */
+.btn-gradient {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-gradient::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.btn-gradient:hover::after {
+  left: 100%;
+}
+
+/* Input icon animation */
+.input-icon {
+  transition: transform 0.3s ease;
+}
+
+.input-container:focus-within .input-icon {
+  transform: scale(1.1);
+  color: #f59e0b;
+}
+
+/* Loading state for form submission */
+@keyframes loading-dots {
+  0%, 20% {
+    content: ".";
+  }
+  40% {
+    content: "..";
+  }
+  60%, 100% {
+    content: "...";
+  }
+}
+
+.loading::after {
+  content: "";
+  animation: loading-dots 1.5s infinite;
+}
+
+/* Scroll animation for contact cards */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in-up {
+  animation: slideInUp 0.5s ease-out forwards;
+}
+
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-300 { animation-delay: 0.3s; }
+.animate-delay-400 { animation-delay: 0.4s; }
