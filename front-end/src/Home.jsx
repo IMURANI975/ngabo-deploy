@@ -912,7 +912,7 @@ const Home = () => {
                 <Scissors className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">Ngabo Saloon</h1>
+                <h1 className="text-2xl font-bold text-gray-900">Ngabo Fashion Hair Saloon</h1>
                 <p className="text-sm text-amber-600">Premium Grooming</p>
               </div>
             </div>
