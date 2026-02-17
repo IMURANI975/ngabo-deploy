@@ -1412,7 +1412,7 @@ const Home = () => {
                         <option value="">Select a service</option>
                         {services.map(service => (
                           <option key={service._name || service.name} value={service._name || service.name}>
-                            {service.name || service.title} - ${service.price}
+                            {service.name || service.title} 
                           </option>
                         ))}
                       </select>
@@ -1493,12 +1493,7 @@ const Home = () => {
                         <span className="font-semibold">{formData.email}</span>
                       </div>
                       <div className="pt-4 border-t border-gray-200">
-                        <div className="flex justify-between text-lg font-bold">
-                          <span>Total:</span>
-                          <span className="text-amber-600">
-                            ${getSelectedService()?.price || '0.00'}
-                          </span>
-                        </div>
+                    
                       </div>
                     </div>
                   </div>
