@@ -764,7 +764,7 @@ const Home = () => {
             <div className="flex flex-col md:flex-row justify-between items-center mb-8">
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  Follow Our Daily Work <span className="text-rose-500">@ngabo fashion hair saloon</span>
+                  Follow Our Daily Work <span className="text-rose-500">@ngabofashion hairsaloon</span>
                 </h3>
                 <p className="text-gray-600">See behind the scenes and latest styles</p>
               </div>
@@ -912,7 +912,7 @@ const Home = () => {
                 <Scissors className="w-6 h-6 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">Ngabo Fashion Hair Saloon</h1>
+                <h1 className="text-2xl font-bold text-gray-900">NgaboFashion HairSaloon</h1>
                 <p className="text-sm text-amber-600">Premium Grooming</p>
               </div>
             </div>
@@ -1102,7 +1102,7 @@ const Home = () => {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight" style={{animation: 'slideUp 0.8s ease-out'}}>
-                Elevate Your Style at <span className="text-amber-600">Ngabo Fashion Hair Saloon</span>
+                Elevate Your Style at <span className="text-amber-600">NgaboFashion HairSaloon</span>
               </h1>
               
               <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{animation: 'slideUp 0.8s ease-out', animationDelay: '200ms', animationFillMode: 'both'}}>
@@ -1636,7 +1636,7 @@ const Home = () => {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>© 2024 Ngabo Fashion Hair Saloon. All rights reserved.</p>
+            <p>© 2024NgaboFashion HairSaloon. All rights reserved.</p>
             <p className="mt-2 text-sm mb-10">Crafted with ❤️ for exceptional grooming experiences</p>
             <a 
               href="/admin/login" 
