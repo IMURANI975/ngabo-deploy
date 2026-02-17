@@ -7,7 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Create temporary uploads directory for processing before Cloudinary upload
-const uploadsDir = path.join(__dirname, '../temp-uploads');
+const uploadsDir = '/tmp/salon-uploads';
 if (!fs.existsSync(uploadsDir)) {
   fs.mkdirSync(uploadsDir, { recursive: true });
 }
