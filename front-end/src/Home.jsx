@@ -1102,7 +1102,7 @@ const Home = () => {
               </div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight" style={{animation: 'slideUp 0.8s ease-out'}}>
-                Elevate Your Style at <span className="text-amber-600">Ngabo Saloon</span>
+                Elevate Your Style at <span className="text-amber-600">Ngabo Fashion Hair Saloon</span>
               </h1>
               
               <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed" style={{animation: 'slideUp 0.8s ease-out', animationDelay: '200ms', animationFillMode: 'both'}}>
