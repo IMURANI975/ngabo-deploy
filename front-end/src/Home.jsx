@@ -1636,7 +1636,7 @@ const Home = () => {
           </div>
 
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>© 2024 Ngabo Saloon. All rights reserved.</p>
+            <p>© 2024 Ngabo Fashion Hair Saloon. All rights reserved.</p>
             <p className="mt-2 text-sm mb-10">Crafted with ❤️ for exceptional grooming experiences</p>
             <a 
               href="/admin/login" 
