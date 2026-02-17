@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { createAppointment } from './api/appointments';
 import { fetchAllServices } from './api/services';
 import { fetchAllGalleryImages } from './api/gallery';
+import { FaWhatsapp } from "react-icons/fa";
+import { SiTiktok } from "react-icons/si";
 import { io } from 'socket.io-client';
 
 import {
@@ -1567,14 +1569,14 @@ const Home = () => {
                 <a href="https://www.instagram.com/ngabofashion_hair_saloon" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors">
                   <Instagram className="w-5 h-5" />
                 </a>
-                <a href="https://www.facebook.com/ngabofashion_hair_saloon" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors">
+                <a href="https://www.facebook.com/ngabo.hodal" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors">
                   <Facebook className="w-5 h-5" />
                 </a>
-                <a href="https://www.twitter.com/ngabofashion_hair_saloon" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors">
-                  <Twitter className="w-5 h-5" />
+                <a href="https://wa.me/250781216840" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors">
+                  <FaWhatsapp className="w-5 h-5" />
                 </a>
-                 <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors">
-                  <Twitter className="w-5 h-5" />
+                 <a href="https://www.tiktok.com/@ngabofashion" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-600 transition-colors">
+                  <SiTiktok className="w-5 h-5" />
                 </a>
               </div>
             </div>
