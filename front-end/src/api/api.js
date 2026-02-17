@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://ngabo-deploy-1.onrender.com';
+const baseURL = 'https://ngabo-deploy-backend-1.onrender.com';
 
 export const api = axios.create({
   baseURL,
