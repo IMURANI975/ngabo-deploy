@@ -61,7 +61,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: '*', // later restrict this in production
+    origin: 'https://www.ngabofashionhairsaloon.com/', // later restrict this in production
     methods: ['GET', 'POST', 'PUT', 'DELETE']
   }
 });
